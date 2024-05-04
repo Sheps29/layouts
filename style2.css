@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(199, 195, 195);
+}
+
+.wrapper{
+    
+    background-color: aliceblue;
+    width: 1200px;
+    padding: 10px 15px;
+    overflow: hidden;
+    position: fixed;
+    margin-left: 300px;
+
+}
+
+.nav{
+    width: 30%;
+    float: left;
+    padding: 80px;
+    margin: 10;
+}
+
+.maintext{
+    width: 30%;
+    float: left;
+    
+    margin: 10;
+}
+
+.quote{
+    width: 20%;
+    float: right;
+    padding: 80px;
+    margin: 10;
+}

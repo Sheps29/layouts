@@ -1,0 +1,28 @@
+body {
+    background-color: #cec7c7;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    background-color: azure;
+}
+
+.content{
+    max-width: 480px;
+}
+
+.quote {
+    max-width: 200px;
+}
