@@ -1,0 +1,93 @@
+body {
+    background-color: rgb(213, 213, 206);
+
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    font-family: "Permanent Marker", cursive;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+}
+
+.block div {
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin-bottom: 30px;
+    background-color: rgba(254, 254, 252, 0.695);
+    color: #2a2828;
+    box-shadow: 3px 3px 5px rgb(160, 160, 157);
+}
+
+.block nav {
+    max-width: 350px;
+    padding: 35px 10px 210px 10px;
+}
+
+nav>ul {
+    list-style-type: none;
+}
+
+.block li {
+    padding-top: 10px;
+}
+
+li>a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    font-size: 150%;
+}
+
+.block main {
+    max-width: 400px;
+}
+
+.img {
+    width: 400px;
+}
+
+.photo {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.photo:hover::after {
+    content: "cat";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 25px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+    font-size: 24px;
+}
+
+.img::after {
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.block aside {
+    max-width: 300px;
+}
+
+aside>p {
+    position: relative;
+    top: 50px;
+    padding: 0 15px 0 10px;
+}
