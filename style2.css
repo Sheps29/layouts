@@ -1,42 +1,71 @@
 body {
-    background-color: rgb(204, 206, 208);
-    font-family: "Chakra Petch", sans-serif;
+	background-color: rgb(204, 206, 208);
+	font-family: "Chakra Petch", sans-serif;
 }
 
 .header {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
+
+	@media (max-width: 768px) {
+		font-size: 24px;
+	}
+
+	@media (max-width: 486px) {
+		font-size: 16px;
+	}
 }
 
 .block {
-    display: flex;
-    justify-content: center;
-
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .block div {
-    display: flex;
-    gap: 30px;
-    max-width: 1200px;
-    background-color: rgb(228, 232, 236);
-    border-style: groove;
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	max-width: 1200px;
+	background-color: rgb(228, 232, 236);
+	border-style: groove;
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
 }
 
 .block nav {
-    max-width: 350px;
+	max-width: 350px;
+
+	/* @media (max-width: 768px) {
+		max-width: 100%;
+		;
+	} */
 }
 
-nav>ul {
-    list-style-type: none;
-    padding: 150px 10px 100px 10px;
+.block ul {
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	padding: 150px 10px 100px 10px;
+
+	@media (max-width: 768px) {
+		flex-direction: row;
+	}
 }
 
 .block main {
-    max-width: 480px;
+	display: flex;
+	flex-direction: row;
+}
+
+.block section {
+	max-width: 480px;
 }
 
 .block aside {
-    padding: 150px 10px 150px 10px;
-    max-width: 200px;
-    border-left: 5px solid rgb(105, 106, 108);
+	padding: 150px 10px 150px 10px;
+	max-width: 200px;
+	border-left: 5px solid rgb(105, 106, 108);
 }
