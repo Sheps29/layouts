@@ -6,6 +6,9 @@ body {
 .header {
 	display: flex;
 	justify-content: center;
+	font-size: 32px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 
 	@media (max-width: 768px) {
 		font-size: 24px;
@@ -19,49 +22,53 @@ body {
 .block {
 	display: flex;
 	justify-content: center;
-	flex-direction: column;
-}
-
-.block div {
-	display: flex;
 	flex-direction: row;
+	margin: auto;
 	gap: 30px;
 	max-width: 1200px;
 	background-color: rgb(228, 232, 236);
-	border-style: groove;
 
 	@media (max-width: 768px) {
 		flex-direction: column;
 	}
-}
 
-.block nav {
-	max-width: 350px;
-
-	/* @media (max-width: 768px) {
-		max-width: 100%;
-		;
-	} */
+	@media (max-width: 486px) {
+		font-size: 16px;
+	}
 }
 
 .block ul {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
+	margin-top: 30px;
+	padding: 20px 10px;
 	list-style-type: none;
-	padding: 150px 10px 100px 10px;
+	font-size: 18px;
 
 	@media (max-width: 768px) {
 		flex-direction: row;
 	}
 }
 
+.block li {
+	padding: 10px 5px;
+}
+
 .block main {
 	display: flex;
-	flex-direction: row;
+	gap: 30px;
+	padding: 20px 10px;
+	/* flex-direction: row; */
 }
 
 .block section {
 	max-width: 480px;
+}
+
+.block h2 {
+	font-size: 24px;
+	padding: 10px 0;
 }
 
 .block aside {

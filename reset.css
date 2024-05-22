@@ -95,9 +95,9 @@ header,
 hgroup,
 menu,
 nav,
-section {
+/* section {
   display: block
-}
+} */
 
 html {
   height: 100%
