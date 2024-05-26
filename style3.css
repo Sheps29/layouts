@@ -1,6 +1,5 @@
 body {
 	background-color: rgb(213, 213, 206);
-
 }
 
 .header {
@@ -39,13 +38,6 @@ body {
 		font-size: 16px;
 	}
 }
-
-
-
-/* .block nav {
-	max-width: 350px;
-	padding: 35px 10px 210px 10px;
-} */
 
 .block ul {
 	display: flex;
