@@ -206,7 +206,7 @@ body {
 }
 
 .section_four {
-  background-color: #f3eeee;
+  background-color: #FBFBFB;
   margin: 20px;
   max-width: 1400px;
   border-radius: 46px;
@@ -225,47 +225,117 @@ body {
   font-weight: 400;
   padding-top: 30px;
   color: #494949;
+  padding-bottom: 50px;
 }
 
 .section_four_box {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 40px;
+  padding: 50px 40px;
 }
 
 .section_four_box div {
-  background-color: #e4d7d7;
+  background-color: rgb(209, 212, 214);
   border-radius: 32px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #262626;
+  padding: 5px 5px;
 }
 
 .section_four_box div:nth-of-type(1) {
   flex-grow: 2;
+  padding: 20px 10px;
 }
 
 .section_four_box div:nth-of-type(2) {
   flex-grow: 2;
+  padding: 20px 10px;
 }
 
 .section_four_box div:nth-of-type(3) {
   flex-grow: 2;
+  padding: 20px 10px;
 }
 
 .section_four_box div:nth-of-type(4) {
   flex-grow: 2;
+  padding: 20px 10px;
 }
 
 .section_four_box div:nth-of-type(5) {
   flex-grow: 1;
+  padding: 20px 10px;
 }
 
 .section_four_box div:nth-of-type(6) {
   flex-grow: 3;
 }
 
+.section_four_box div:nth-of-type(6) p {
+  text-align: center;
+}
+
+.section_four_box div:nth-of-type(6) button {
+  background-color: #E4FF02;
+  padding: 17px 200px;
+  border-radius: 48px;
+  font-size: 16px;
+  margin: 30px 40px 10px 40px;
+  border: none;
+}
+
 .section_four_box div:nth-of-type(7) {
   flex-grow: 1;
+  padding: 20px 10px;
 }
 
 .section_four_box div:nth-of-type(8) {
   flex-grow: 1;
+  padding: 20px 10px;
+}
+
+.section_five {
+  margin: 20px;
+  max-width: 1400px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.section_five h3 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 500;
+  padding-top: 70px;
+}
+
+.section_five h5 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 400;
+  padding-top: 30px;
+  color: #494949;
+  padding-bottom: 50px;
+  line-height: 25px;
+}
+
+.section_five button {
+  background-color: #E4FF02;
+  border-radius: 32px;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 40px 100px;
+  margin: 5px 480px;
+}
+
+.section_five div {
+  background-color: #FFFFFF;
+  border-radius: 32px;
+  font-size: 20px;
+  font-weight: 500;
+  flex-direction: row;
 }
