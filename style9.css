@@ -1,12 +1,13 @@
 html {
 	height: 100%;
+	width: 100%;
 }
 
 body {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	margin: 1% 20% 10% 20%;
+
 
 	@media (max-width: 768px) {
 		min-height: 480px;
@@ -45,7 +46,7 @@ body {
 
 	@media (max-width: 768px) {
 		flex-direction: column;
-		max-width: 768px;
+		max-width: 100%;
 	}
 }
 
@@ -58,8 +59,7 @@ body {
 
 	@media (max-width: 768px) {
 		overflow: auto;
-		max-width: 768px;
-		max-height: 25%;
+		max-width: 100%;
 	}
 }
 
@@ -68,7 +68,7 @@ body {
 	font-size: 24px;
 
 	@media (max-width: 768px) {
-		max-width: 1200px;
+		max-width: 100%;
 	}
 }
 
@@ -80,7 +80,8 @@ body {
 	padding: 0;
 
 	@media (max-width: 768px) {
-		flex-flow: row nowrap;
+		flex-direction: row;
+		flex-wrap: nowrap;
 		font-size: 24px;
 	}
 
@@ -106,6 +107,8 @@ body {
 	text-decoration: none;
 	list-style-type: circle;
 	color: black;
+	white-space: nowrap;
+	/*height*/
 }
 
 .block article {

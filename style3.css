@@ -97,7 +97,7 @@ section>p {
 
 .photo {
 	position: relative;
-	display: inline-block;
+	display: block;
 	border-bottom: 1px dotted black;
 }
 
