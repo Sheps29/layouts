@@ -68,7 +68,7 @@ body {
 	}
 }
 
-.left {
+.info {
 	max-width: 300px;
 	margin-right: 30px;
 	padding: 35px 10px 0 10px;
@@ -91,7 +91,7 @@ body {
 	}
 }
 
-.left~aside {
+.info~aside {
 	max-width: 300px;
 	padding: 35px 10px 0 10px;
 	background-color: rgba(222, 226, 230, 0.448);
@@ -104,5 +104,4 @@ body {
 
 .block footer {
 	margin-top: 20px;
-
 }
