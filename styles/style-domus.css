@@ -59,6 +59,7 @@ button {
   grid-template-areas:
     "contact domus register";
   justify-content: space-between;
+  width: 100%;
 }
 
 .contact {
