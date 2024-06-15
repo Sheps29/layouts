@@ -7,9 +7,9 @@ body {
 .header {
 	display: flex;
 	justify-content: center;
-	font-size: 32px;
 	margin-top: 30px;
 	margin-bottom: 20px;
+	font-size: 32px;
 	text-shadow: 2px 2px 4px rgb(73, 98, 73);
 
 	@media (max-width: 768px) {
@@ -65,8 +65,8 @@ body {
 }
 
 .block a {
-	text-decoration: none;
 	color: blueviolet;
+	text-decoration: none;
 }
 
 .block li:hover a {
@@ -86,9 +86,9 @@ body {
 }
 
 .block h3 {
-	text-decoration: overline;
 	color: rgb(47, 108, 47);
 	font-size: 18px;
+	text-decoration: overline;
 }
 
 .block aside {

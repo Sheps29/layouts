@@ -43,8 +43,8 @@ body {
 	flex-wrap: wrap;
 	margin-top: 30px;
 	padding: 20px 10px;
-	list-style-type: none;
 	font-size: 18px;
+	list-style-type: none;
 
 	@media (max-width: 768px) {
 		flex-direction: row;
@@ -71,7 +71,7 @@ body {
 }
 
 .block aside {
-	padding: 150px 10px 150px 10px;
 	max-width: 200px;
+	padding: 150px 10px 150px 10px;
 	border-left: 5px solid rgb(105, 106, 108);
 }
