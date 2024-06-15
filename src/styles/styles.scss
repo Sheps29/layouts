@@ -1,0 +1,25 @@
+@import "variables";
+
+@import "mixin";
+
+@import "extend";
+
+body {
+  font-family: $font;
+  background-color: $bgColor;
+
+  .header {
+    display: flex;
+    justify-content: center;
+    @include margin;
+    @extend %text;
+  
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+  
+    @media (max-width: 486px) {
+      font-size: 16px;
+    }
+  }
+}
