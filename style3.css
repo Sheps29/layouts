@@ -105,22 +105,12 @@ section>p {
 	content: "cat";
 	position: absolute;
 	top: 50%;
-	right: 100%;
+	right: 30px;
 	margin-top: -5px;
-	border-width: 25px;
-	border-style: solid;
-	border-color: transparent black transparent transparent;
 	font-size: 24px;
 }
 
-.img::after {
-	position: absolute;
-	top: 50%;
-	right: 100%;
-	margin-top: -5px;
-	border-width: 5px;
-	border-style: solid;
-}
+
 
 .block aside {
 	max-width: 300px;

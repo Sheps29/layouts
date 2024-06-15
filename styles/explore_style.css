@@ -1,0 +1,89 @@
+.explore {
+  display: flex;
+  flex-direction: row;
+  margin: 90px 20px;
+  gap: 30px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    max-width: 100%;
+  }
+}
+
+.explore div {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+}
+
+.explore button {
+  padding: 17px 0;
+  margin: 36px 20px 25px 20px;
+}
+
+.explore div:first-of-type {
+  margin-left: 30px;
+  align-self: center;
+}
+
+.explore div:first-of-type h2 {
+  font-size: 40px;
+}
+
+.explore div:first-of-type p {
+  font-size: 18px;
+  padding-top: 15px;
+}
+
+.explore div:nth-of-type(2) {
+  background-color: #f3eeee;
+  border-radius: 32px;
+  max-width: 528px;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+}
+
+.explore div:nth-of-type(2) img {
+  width: 528px;
+  height: 210px;
+}
+
+.explore div:nth-of-type(2) h3 {
+  font-size: 24px;
+  margin: 8px 20px;
+}
+
+.explore div:nth-of-type(2) p {
+  font-size: 16px;
+  margin: 0 20px;
+}
+
+.explore div:last-of-type {
+  background-color: #f3eeee;
+  border-radius: 32px;
+  max-width: 300px;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+}
+
+.explore div:last-of-type img {
+  width: 300px;
+  height: 210px;
+}
+
+.explore div:last-of-type h3 {
+  font-size: 24px;
+  margin: 8px 20px;
+}
+
+.explore div:last-of-type p {
+  font-size: 16px;
+  margin: 20px;
+}

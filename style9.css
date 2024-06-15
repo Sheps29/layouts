@@ -1,16 +1,21 @@
 html {
 	height: 100%;
 	width: 100%;
+
+	@media (max-width: 768px) {
+		max-width: 100%;
+	}
 }
 
 body {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-
+	max-width: 100%;
 
 	@media (max-width: 768px) {
 		min-height: 480px;
+		max-width: 100%;
 	}
 }
 
@@ -38,20 +43,21 @@ body {
 
 .block {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	margin: auto;
 	flex-grow: 1;
-	max-width: 1200px;
+	width: 1200px;
 	font-size: 24px;
 
 	@media (max-width: 768px) {
 		flex-direction: column;
+		justify-content: start;
 		max-width: 100%;
 	}
 }
 
 .block>aside {
-	max-width: 300px;
+	max-width: 400px;
 	margin-right: 20px;
 	padding: 15px 15px 0 15px;
 	height: 100%;
@@ -60,6 +66,7 @@ body {
 	@media (max-width: 768px) {
 		overflow: auto;
 		max-width: 100%;
+		max-height: 100px;
 	}
 }
 
@@ -107,19 +114,24 @@ body {
 	text-decoration: none;
 	list-style-type: circle;
 	color: black;
-	white-space: nowrap;
-	/*height*/
+
+	@media (max-width: 768px) {
+		white-space: nowrap;
+	}
+
 }
 
 .block article {
-	max-width: 600px;
+	display: flex;
+	flex-direction: column;
+	max-width: 700px;
 	margin: 10px 0;
 	padding: 15px 15px 0 15px;
 
 	@media (max-width: 768px) {
 		flex-wrap: nowrap;
 		font-size: 24px;
-		max-width: 1200px;
+		max-width: 100%;
 		margin: 5px 15px;
 		padding-right: 25px;
 	}
@@ -132,6 +144,10 @@ body {
 .wrapper {
 	height: 500px;
 	overflow: auto;
+
+	@media (max-width: 768px) {
+		height: 100%;
+	}
 }
 
 .wrapper::-webkit-scrollbar {
