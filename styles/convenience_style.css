@@ -1,29 +1,46 @@
 .convenience {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
   height: 646px;
   margin: 90px 20px;
   border-radius: 32px;
-  max-width: 500px;
+  max-width: 1400px;
+  width: 100%;
 
   @media (max-width: 768px) {
-    max-width: 50%;
-    margin: 40px 20px;
+    height: 100%;
+    width: 100%;
+    margin: 0 20px;
   }
 
 }
 
 .convenience img {
-  position: absolute;
+  /* position: relative; */
   object-fit: contain;
   z-index: 1;
 
+
   @media (max-width: 768px) {
     max-width: 100%;
+    margin-right: 20px;
   }
 }
 
 .convenience div {
-  margin-left: 53px;
+  position: absolute;
+  left: 53px;
+  top: 20px;
   z-index: 2;
+  max-width: 500px;
+
+  @media (max-width: 768px) {
+    max-width: 50%;
+    left: 10px;
+    top: 0;
+  }
 }
 
 .convenience h2 {
@@ -33,7 +50,7 @@
   z-index: 2;
 
   @media (max-width: 768px) {
-    font-size: 20px;
+    font-size: 16px;
     padding-top: 30px;
   }
 }
@@ -43,10 +60,15 @@
   padding-top: 20px;
 
   @media (max-width: 768px) {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
 .convenience button {
   margin-top: 30px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 10px;
+  }
 }

@@ -9,20 +9,23 @@
 
   @media (max-width: 768px) {
     margin: 0 20px;
+    height: 100%;
   }
 }
 
 .create img {
-  position: absolute;
+  /* position: absolute; */
   object-fit: contain;
   z-index: 1;
 
   @media (max-width: 768px) {
     max-width: 100%;
+    /* max-height: max-content; */
   }
 }
 
 .create div {
+  position: absolute;
   max-width: 500px;
   padding: 10px 30px;
   z-index: 2;
@@ -33,7 +36,7 @@
   font-weight: 600;
 
   @media (max-width: 768px) {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -42,7 +45,7 @@
   padding-top: 20px;
 
   @media (max-width: 768px) {
-    font-size: 16px;
+    font-size: 14px;
     max-width: 50%;
   }
 }
@@ -51,4 +54,8 @@
   margin-top: 30px;
   width: 100%;
   max-width: 193px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 }

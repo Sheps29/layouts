@@ -31,6 +31,12 @@
 
 .explore div:first-of-type h2 {
   font-size: 40px;
+
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+    text-align: center;
+  }
 }
 
 .explore div:first-of-type p {
