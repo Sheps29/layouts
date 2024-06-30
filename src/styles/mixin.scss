@@ -1,3 +1,19 @@
 @mixin margin {
-  margin: 30px 0;
+  margin: 50px 0;
+}
+
+@mixin color {
+  color: white;
+}
+
+@mixin button {
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+}
+
+@mixin span {
+  font-style: italic;
 }

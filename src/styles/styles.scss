@@ -5,21 +5,361 @@
 @import "extend";
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   font-family: $font;
   background-color: $bgColor;
+  @include color;
+  @extend %text;
 
-  .header {
-    display: flex;
-    justify-content: center;
-    @include margin;
-    @extend %text;
-  
-    @media (max-width: 768px) {
-      font-size: 24px;
-    }
-  
-    @media (max-width: 486px) {
-      font-size: 16px;
-    }
+  button {
+    @include button;
   }
+
+  span {
+    @include span;
+  }
+
+  main {
+    width: 100%;
+    max-width: 1440px;
+  }
+
+  section {
+    @include margin;
+  }
+
+    .bring {
+      position: relative;
+
+      img {
+        object-fit: contain;
+      }
+
+      p:first-of-type {
+        position: absolute;
+        top: 30px;
+        left: 40px;
+        font-size: 72px;
+        width: 650px;
+        line-height: 80px;
+      }
+
+      p:nth-of-type(2), p:nth-of-type(3) {
+        position: absolute;
+        color: #E2E2E2;
+      }
+
+      p:nth-of-type(2) {
+        bottom: 150px;
+        right: 77px;
+      }
+
+      p:nth-of-type(3) {
+        bottom: 134px;
+        right: 40px;
+      }
+    }
+
+    .market {
+      position: relative;
+
+      p:first-of-type {
+        position: absolute;
+        left: 40px;
+      }
+
+      p:nth-of-type(2), p:nth-of-type(3) {
+        font-weight: 500;
+        font-size: 42px;
+        line-height: 50px;
+      }
+
+      p:nth-of-type(2) {
+        margin: 50px 40px 0 40px;
+        text-align: right;
+      }
+
+      p:nth-of-type(3) {
+        margin: 0 40px 50px 40px;
+        text-align: justify;
+      }
+    }
+
+    .unusual {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: right;
+      
+      .clarity_lenses {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+        text-align: right;
+
+        .clarity {
+          align-items: center;
+        
+        }
+
+        .lenses {
+          display: block;
+          width: 1000px;
+          height: 800px;
+        }
+
+        .lenses img {
+          object-fit: cover;
+          height: auto;
+          width: 100%;
+        }
+       }
+
+      .success,
+      .clarity,
+      .connection {
+        display: flex;
+        gap: 16px;
+        width: 375px;
+        text-align: left;
+
+        div:first-of-type p {
+          margin: 0;
+        }
+
+        h4 {
+          font-size: 32px;
+          line-height: 38px;
+          margin: 0;
+        }
+      }
+    }
+
+    .showreel {
+      position: relative;
+
+      img:first-of-type {
+        display: block;
+        margin: 0 auto;
+        object-fit: contain;
+      }
+
+      p {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        line-height: 243px;
+        font-size: 210px;
+        font-weight: 500;
+        color: #909090;
+      }
+
+      img:nth-of-type(2) {
+        position: absolute;
+        right: 60px;
+        bottom: 110px;
+      }
+    }
+
+    .services {
+      display: flex;
+      justify-content: space-between;
+      gap: 329px;
+      margin: 100px 40px 50px 40px;
+
+      button {
+        font-size: 12px;
+      }
+
+      p {
+        margin-top: 0;
+      }
+
+      .web,  
+      .ux,
+      .apps,
+      .expertise {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 32px;
+      }
+
+      .web div:nth-of-type(2),
+      .ux div:nth-of-type(2),
+      .apps div:nth-of-type(2),
+      .expertise div:nth-of-type(2) {
+        width: 100%;
+        border-top: 1px solid white;
+      }
+
+      h4 {
+        font-size: 32px;
+      }
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      div:first-of-type {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+
+        p:first-of-type {
+          width: 380px;
+        }
+
+        p:nth-of-type(2) {
+          width: 546px;
+        }
+
+        p:last-of-type {
+          width: 326px;
+        }
+      }
+
+      .view {
+        font-size: 32px;
+        text-align: right;
+      }
+    }
+
+    .projects {
+      display: flex;
+      gap: 16px;
+
+      div:last-of-type {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        width: 328px;
+
+        p {
+          font-size: 14px;
+          line-height: 16px;
+        }
+
+        h4 {
+          font-size: 32px;
+        }
+
+        div {
+          flex-direction: row;
+          justify-content: flex-start;
+          gap: 10px;
+        }
+      }
+    }
+
+    .process {
+      display: flex;
+      flex-direction: column;
+      margin-top: 100px;
+
+      .plan {
+        display: flex;
+        justify-content: space-between;
+
+        div:last-of-type {
+          width: 901px;
+          font-size: 42px;
+          line-height: 50px;
+          font-weight: 500;
+
+          p {
+            margin: 0 40px;
+          }
+        }
+      }
+
+      .circles {
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+
+        div {
+          width: 424px;
+          height: 424px;
+          border: 1px solid white;
+          border-radius: 50%;
+
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .collide {
+      position: relative;
+
+      img:first-of-type {
+        object-fit: contain;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      p:first-of-type {
+        position: absolute;
+        bottom: 170px;
+        left: 70px;
+        font-size: 90px;
+        text-align: left;
+        line-height: 99px;
+      }
+
+      p:last-of-type {
+        position: absolute;
+        bottom: 170px;
+        right: 70px;
+        font-size: 90px;
+        text-align: left;
+        line-height: 99px;
+      }
+
+      img:last-of-type {
+        position: absolute;
+        bottom: 230px;
+        left: 620px;
+      }
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+       
+        ul {
+          list-style-type: none;
+          
+          li {
+            padding-bottom: 10px;
+          }
+        }
+      
+      div:nth-of-type(2) {
+        display: flex;
+        align-self: flex-end;
+
+       li {
+          display: inline;
+          padding: 10px;
+        }
+      }
+
+      div:last-of-type {
+        text-align: right;
+      }
+    }
 }
