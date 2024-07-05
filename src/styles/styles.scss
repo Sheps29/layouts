@@ -5,10 +5,7 @@
 @import "extend";
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+   width: 100%;
   font-family: $font;
   background-color: $bgColor;
   @include color;
@@ -22,20 +19,60 @@ body {
     @include span;
   }
 
+  header {
+    display: flex;
+    justify-content: center;
+
+    .header {
+      width: 100%;
+      max-width: 1440px;
+      display: flex;
+      justify-content: space-between;
+      margin: 50px 40px 0 40px;
+      padding: 0 40px;
+
+      img {
+        width: 94px;
+        height: 24px;
+      }
+
+      .menu {
+        display: flex;
+        gap: 200px;
+
+        div {
+          display: flex;
+          gap: 50px;
+        }
+      }
+    }
+  }
+
   main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    max-width: 1440px;
   }
 
   section {
     @include margin;
+    @include section;
+    
+    
   }
 
     .bring {
       position: relative;
 
       img {
-        object-fit: contain;
+        max-width: 1440px;
+        max-height: 910px;
+        object-fit: cover;
+
+        @media screen and (max-device-width: 480px) {
+          width: 100%;
+        }
       }
 
       p:first-of-type {
@@ -45,21 +82,43 @@ body {
         font-size: 72px;
         width: 650px;
         line-height: 80px;
+
+        @media screen and (max-device-width: 480px) {
+          font-size: 36px;
+          max-width: 70%;
+          line-height: 36px;
+        }
       }
 
       p:nth-of-type(2), p:nth-of-type(3) {
         position: absolute;
         color: #E2E2E2;
+
+        
       }
 
       p:nth-of-type(2) {
         bottom: 150px;
         right: 77px;
+
+        @media screen and (max-device-width: 480px) {
+          bottom: 25px;
+          right: 30px;
+        }
       }
 
       p:nth-of-type(3) {
         bottom: 134px;
         right: 40px;
+
+        @media screen and (max-device-width: 480px) {
+          bottom: 10px;
+          right: 25px;
+        }
+      }
+
+      @media screen and (max-device-width: 480px) {
+        width: 100%;
       }
     }
 
@@ -75,6 +134,11 @@ body {
         font-weight: 500;
         font-size: 42px;
         line-height: 50px;
+
+        @media screen and (max-device-width: 480px) {
+          font-size: 24px;
+          line-height: 28px;
+        }
       }
 
       p:nth-of-type(2) {
@@ -102,21 +166,39 @@ body {
         width: 100%;
         text-align: right;
 
+        @media screen and (max-device-width: 480px) {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
         .clarity {
           align-items: center;
         
+          @media screen and (max-device-width: 480px) {
+           align-items: flex-start;
+          }
         }
 
         .lenses {
           display: block;
           width: 1000px;
           height: 800px;
+
+          @media screen and (max-device-width: 480px) {
+            width: 100%;
+            height: auto;
+          }
         }
 
         .lenses img {
           object-fit: cover;
           height: auto;
           width: 100%;
+
+          @media screen and (max-device-width: 480px) {
+            width: 100%;
+          }
         }
        }
 
@@ -137,7 +219,12 @@ body {
           line-height: 38px;
           margin: 0;
         }
-      }
+
+        @media screen and (max-device-width: 480px) {
+          width: 90%;
+          flex-direction: column;
+        }
+      } 
     }
 
     .showreel {
@@ -146,7 +233,13 @@ body {
       img:first-of-type {
         display: block;
         margin: 0 auto;
-        object-fit: contain;
+        object-fit: cover;
+        border-radius: 30px;
+
+        @media screen and (max-device-width: 480px) {
+          width: 100%;
+          height: 560px;
+        }
       }
 
       p {
@@ -160,20 +253,42 @@ body {
         font-size: 210px;
         font-weight: 500;
         color: #909090;
+
+        @media screen and (max-device-width: 480px) {
+          font-size: 80px;
+          line-height: 100px;
+          overflow-wrap: break-word;
+          max-width: 250px;
+          left: 60px;
+          top: 50px;
+        }
       }
 
       img:nth-of-type(2) {
         position: absolute;
         right: 60px;
         bottom: 110px;
+
+        @media screen and (max-device-width: 480px) {
+           right: 160px; 
+                 
+        }
       }
+
+      
     }
 
     .services {
       display: flex;
       justify-content: space-between;
-      gap: 329px;
+      gap: 320px;
       margin: 100px 40px 50px 40px;
+
+      @media screen and (max-device-width: 480px) {
+        flex-direction: column;
+        gap: 10px;
+        
+      }
 
       button {
         font-size: 12px;
@@ -183,6 +298,10 @@ body {
         margin-top: 0;
       }
 
+      .left {
+        width: 85px;
+      }
+
       .web,  
       .ux,
       .apps,
@@ -190,6 +309,10 @@ body {
         display: flex;
         gap: 16px;
         margin-bottom: 32px;
+
+        @media screen and (max-device-width: 480px) {
+          flex-direction: column;
+        }
       }
 
       .web div:nth-of-type(2),
@@ -210,27 +333,54 @@ body {
       flex-direction: column;
       gap: 40px;
 
+      @media screen and (max-device-width: 480px) {
+        gap: 10px;
+      }
+
       div:first-of-type {
         display: flex;
         justify-content: space-between;
         gap: 40px;
 
+        @media screen and (max-device-width: 480px) {
+          flex-direction: column;
+          justify-content: center;
+          gap: 10px;
+          padding: 0 10px;
+        }
+
         p:first-of-type {
           width: 380px;
+
+          @media screen and (max-device-width: 480px) {
+            width: 100%;
+          }
         }
 
         p:nth-of-type(2) {
           width: 546px;
+          
+          @media screen and (max-device-width: 480px) {
+            width: 100%;
+          }
         }
 
         p:last-of-type {
           width: 326px;
+
+          @media screen and (max-device-width: 480px) {
+            width: 100%;
+          }
         }
       }
 
       .view {
         font-size: 32px;
         text-align: right;
+
+        @media screen and (max-device-width: 480px) {
+          text-align: center;
+        }
       }
     }
 
@@ -238,11 +388,27 @@ body {
       display: flex;
       gap: 16px;
 
+      @media screen and (max-device-width: 480px) {
+        flex-direction: column;
+      }
+
+      img {
+        object-fit: cover;
+
+        @media screen and (max-device-width: 480px) {
+          width: 100%;
+        }
+      }
+
       div:last-of-type {
         display: flex;
         flex-direction: column;
         align-self: flex-end;
         width: 328px;
+
+        @media screen and (max-device-width: 480px) {
+          align-self: center;
+        }
 
         p {
           font-size: 14px;
@@ -251,6 +417,10 @@ body {
 
         h4 {
           font-size: 32px;
+
+          @media screen and (max-device-width: 480px) {
+            margin: 10px 0;
+          }
         }
 
         div {
@@ -265,19 +435,50 @@ body {
       display: flex;
       flex-direction: column;
       margin-top: 100px;
+      gap: 70px;
+
+      @media screen and (max-device-width: 760px) {
+        width: 100%;
+        
+      }
+
+      @media screen and (max-device-width: 480px) {
+        width: 100%;
+        
+      }
 
       .plan {
         display: flex;
         justify-content: space-between;
+        gap: 300px;
 
-        div:last-of-type {
-          width: 901px;
+        @media screen and (max-device-width: 480px) {
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 20px;
+          width: 100%;
+          
+        }
+
+        p:first-of-type {
+          text-wrap: nowrap;
+
+          @media screen and (max-device-width: 480px) {
+            margin: 0 40px;
+          }
+        }
+
+        p:last-of-type {
           font-size: 42px;
           line-height: 50px;
           font-weight: 500;
+          margin: 0 40px;
 
-          p {
-            margin: 0 40px;
+          @media screen and (max-device-width: 480px) {
+            font-size: 24px;
+            text-wrap: wrap;
+            line-height: 28px;
           }
         }
       }
@@ -286,16 +487,31 @@ body {
         display: flex;
         width: 100%;
         overflow-x: scroll;
+        scrollbar-width: none;
 
         div {
-          width: 424px;
+          display: flex;
+          min-width: 424px;
           height: 424px;
           border: 1px solid white;
           border-radius: 50%;
+          align-items: center;
+          justify-content: center;
 
           p {
             text-align: center;
+            font-size: 32px;
+
+            span {
+              vertical-align: 0.8em;
+              font-size: 16px;
+            }
           }
+        }
+
+        div:last-of-type {
+          background-color: white;
+          color: black;
         }
       }
     }
@@ -303,42 +519,88 @@ body {
     .collide {
       position: relative;
 
-      img:first-of-type {
-        object-fit: contain;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
+      div {
+       max-width: 740px;
+       max-height: 650px;
+      
 
-      p:first-of-type {
-        position: absolute;
-        bottom: 170px;
-        left: 70px;
-        font-size: 90px;
-        text-align: left;
-        line-height: 99px;
-      }
+        img:first-of-type {
+          object-fit: cover;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
 
-      p:last-of-type {
-        position: absolute;
-        bottom: 170px;
-        right: 70px;
-        font-size: 90px;
-        text-align: left;
-        line-height: 99px;
-      }
+          @media screen and (max-device-width: 480px) {
+            width: 100%;
+          }
+        }
 
-      img:last-of-type {
-        position: absolute;
-        bottom: 230px;
-        left: 620px;
+        p:first-of-type {
+          position: absolute;
+          bottom: 170px;
+          left: -170px;
+          font-size: 90px;
+          text-align: left;
+          line-height: 99px;
+
+          @media screen and (max-device-width: 480px) {
+            font-size: 44px;
+            left: 50px;
+            top: -90px;
+          }
+        }
+
+        p:last-of-type {
+          position: absolute;
+          bottom: 170px;
+          right: -170px;
+          font-size: 90px;
+          text-align: left;
+          line-height: 99px;
+
+          @media screen and (max-device-width: 480px) {
+            font-size: 44px;
+            right: 50px;
+            top: -90px;
+          }
+        }
+
+        img:last-of-type {
+          position: absolute;
+          bottom: 230px;
+          left: 320px;
+
+          @media screen and (max-device-width: 480px) {
+            font-size: 44px;
+            bottom: 100px;
+            left: 150px;
+          }
+        }
+      }
+    }
+
+    .design {
+      position: relative;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+
       }
     }
 
     footer {
       display: flex;
-      justify-content: space-between;
-      width: 100%;
+      justify-content: center;
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1440px;
+
+        @media screen and (max-device-width: 480px) {
+          flex-direction: column;
+        }
        
         ul {
           list-style-type: none;
@@ -348,18 +610,58 @@ body {
           }
         }
       
-      div:nth-of-type(2) {
+        div:first-of-type {
+
+          @media screen and (max-device-width: 480px) {
+            text-align: center;
+            font-size: 14px;
+          }
+
+          ul {
+            @media screen and (max-device-width: 480px) {
+              padding: 0;
+            }
+          }
+
+          li:first-of-type {
+            @media screen and (max-device-width: 480px) {
+              font-size: 32px;
+            }
+          }
+        }
+
+        div:nth-of-type(2) {
         display: flex;
         align-self: flex-end;
 
-       li {
+          ul {
+            padding: 0;
+
+             
+            @media screen and (max-device-width: 480px) {
+              display: flex;
+              justify-content: space-between;
+              flex-wrap: wrap;
+              gap: 10px;
+              font-size: 14px;
+          }
+            
+        }
+
+        li {
           display: inline;
           padding: 10px;
         }
-      }
+        }
 
-      div:last-of-type {
+        div:last-of-type {
         text-align: right;
+
+        @media screen and (max-device-width: 480px) {
+          font-size: 14px;
+          text-align: center;
+        }
+        }
       }
     }
 }

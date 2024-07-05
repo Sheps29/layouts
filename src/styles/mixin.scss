@@ -17,3 +17,7 @@
 @mixin span {
   font-style: italic;
 }
+
+@mixin section {
+  max-width: 1440px;
+}
