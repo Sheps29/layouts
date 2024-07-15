@@ -21,3 +21,8 @@
 @mixin section {
   max-width: 1440px;
 }
+
+@mixin ul {
+  list-style-type: none;
+  padding: 0;
+}

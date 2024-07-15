@@ -14,23 +14,27 @@
 </head>
 
 <body>
-  <header>
-    <div class="header">
+  <header class="header">
+    <picture class="header.subtract">
       <img src="./src/images/subtract.png" alt="subtract">
-      <img src="./src/images/menu.png" alt="menu">
-      <div class="menu">
-        <div>
-          <p>About us</p>
-          <p>Services</p>
-          <p>Projects</p>
-        </div>
-        <p>Contacts</p>
-      </div>
+    </picture>
+    <picture class="header.burger">
+      <img src="./src/images/menu.png" alt="menu" class="header.burger.img">
+    </picture>
+    <div class="header.menu">
+      <ul>
+        <li>About us</li>
+        <li>Services</li>
+        <li>Projects</li>
+        <li>Contacts</li>
+      </ul>
     </div>
   </header>
   <main>
     <section class="bring">
-      <img src="./src/images/plates.png" alt="plates">
+      <picture>
+        <img src="./src/images/plates.png" alt="plates">
+      </picture>
       <p>Bring your idea to life with our <span> boundless creativity </span></p>
       <p>[ from million idea</p>
       <p>to great one project ]</p>
@@ -43,9 +47,7 @@
     </section>
     <section class="unusual">
       <div class="success">
-        <div>
-          <p>(01)</p>
-        </div>
+        <span>(01)</span>
         <div>
           <h4>Unusual</h4>
           <p>We've made sure that presenting is not how success is usually done. That's why we strive to show reveal
@@ -55,7 +57,7 @@
       </div>
       <div class="clarity_lenses">
         <div class="clarity">
-          <div>(02)</div>
+          <span>(02)</span>
           <div>
             <h4>Clarity</h4>
             <p>In order to get the result that you need, it is necessary to initially clearly identify all the goals.
@@ -68,7 +70,7 @@
         </div>
       </div>
       <div class="connection">
-        <div>(03)</div>
+        <span>(03)</span>
         <div>
           <h4>Connection</h4>
           <p>It is important for us to communicate with
@@ -79,88 +81,122 @@
       </div>
     </section>
     <section class="showreel">
-      <img src="./src/images/arcs.png" alt="arcs">
+      <picture class="showreel.arcs">
+        <img src="./src/images/arcs.png" alt="arcs">
+      </picture>
       <p>SHOWREEL</p>
-      <img src="./src/images/play.png" alt="play">
+      <picture>
+        <img src="./src/images/play.png" alt="play">
+      </picture>
     </section>
     <section class="services">
-      <div class="left">
-        <p>[ Services ]</p>
-      </div>
+      <p class="left">[ Services ]</p>
       <div>
-        <div class="web">
-          <div>
-            <p>(01)</p>
-          </div>
-          <div>
+        <div class="version">
+          <span>(01)</span>
+          <div class="version_design">
             <h4>Web Design</h4>
-            <div>
-              <button>Prototyping</button>
-              <button>Usabipity Testing & Validation</button>
-              <button>Adaptive</button>
-              <button>Immersive</button>
-              <button>Style Guide</button>
-            </div>
+            <ul>
+              <li>
+                <button>Prototyping</button>
+              </li>
+              <li>
+                <button>Usabipity Testing & Validation</button>
+              </li>
+              <li>
+                <button>Adaptive</button>
+              </li>
+              <li>
+                <button>Immersive</button>
+              </li>
+              <li>
+                <button>Style Guide</button>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="ux">
-          <div>
-            <p>(02)</p>
-          </div>
-          <div>
+        <div class="version">
+          <span>(02)</span>
+          <div class="version_design">
             <h4>UX/UI Design</h4>
-            <div>
-              <button>UX Analytics</button>
-              <button>Wireframes</button>
-              <button>Usabipity Testing</button>
-              <button>Design Concept</button>
-              <button>Design All Screens</button>
-              <button>Style Guide</button>
-              <button>Development</button>
-            </div>
+            <ul>
+              <li>
+                <button>UX Analytics</button>
+              </li>
+              <li>
+                <button>Wireframes</button>
+              </li>
+              <li>
+                <button>Usabipity Testing</button>
+              </li>
+              <li>
+                <button>Design Concept</button>
+              </li>
+              <li>
+                <button>Design All Screens</button>
+              </li>
+              <li>
+                <button>Style Guide</button>
+              </li>
+              <li>
+                <button>Development</button>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="apps">
-          <div>
-            <p>(03)</p>
-          </div>
-          <div>
+        <div class="version">
+          <span>(03)</span>
+          <div class="version_design">
             <h4>Apps Design</h4>
-            <div>
-              <button>UX Analytics</button>
-              <button>Design Concept</button>
-              <button>Design All Screens</button>
-              <button>Style Guide</button>
-              <button>Transfer to Development</button>
-              <button>Development</button>
-            </div>
+            <ul>
+              <li>
+                <button>UX Analytics</button>
+              </li>
+              <li>
+                <button>Design Concept</button>
+              </li>
+              <li>
+                <button>Design All Screens</button>
+              </li>
+              <li>
+                <button>Style Guide</button>
+              </li>
+              <li>
+                <button>Transfer to Development</button>
+              </li>
+              <li>
+                <button>Development</button>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="expertise">
-          <div>
-            <p>(04)</p>
-          </div>
-          <div>
+        <div class="version">
+          <span>(04)</span>
+          <div class="version_design">
             <h4>Expertise</h4>
-            <div>
-              <button>Consultation</button>
-              <button>Help in Choosing a Solution</button>
-            </div>
+            <ul>
+              <li>
+                <button>Consultation</button>
+              </li>
+              <li>
+                <button>Help in Choosing a Solution</button>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
     <section class="info">
-      <div>
-        <p>[ Projects ]</p>
-        <p>In our portfolio you can find many projects that we have successfully completed and that reflect our
-          creativity, innovative approach and quality of work.</p>
-        <p>Our team strives to create websites and applications that are not only beautiful, but also easy to use.</p>
-      </div>
-      <p class="view">[ View all projects ]</p>
+      <h5>[ Projects ]</h5>
+      <p>In our portfolio you can find many projects that we have successfully completed and that reflect our
+        creativity, innovative approach and quality of work.</p>
+      <p>Our team strives to create websites and applications that are not only beautiful, but also easy to use.</p>
+    </section>
+    <section class="view">
+      <h4>[ View all projects ]</h4>
     </section>
     <section class="projects">
-      <div>
+      <div class="image">
         <img src="./src/images/conditions.png" alt="conditions">
       </div>
       <div>
@@ -168,15 +204,21 @@
         <h4>Lamajeure</h4>
         <p>Development of a corporate website with the possibility of logging into your personal account and online
           recording</p>
-        <div>
-          <button>Website</button>
-          <button>UI/UX</button>
-          <button>Content</button>
-        </div>
+        <ul>
+          <li>
+            <button>Website</button>
+          </li>
+          <li>
+            <button>UI/UX</button>
+          </li>
+          <li>
+            <button>Content</button>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="projects">
-      <div>
+      <div class="image">
         <img src="./src/images/nobele.png" alt="nobele">
       </div>
       <div>
@@ -184,15 +226,21 @@
         <h4>Nobele</h4>
         <p>Development of a corporate website with the possibility of logging into your personal account and online
           recording</p>
-        <div>
-          <button>Website</button>
-          <button>UI/UX</button>
-          <button>Development</button>
-        </div>
+        <ul>
+          <li>
+            <button>Website</button>
+          </li>
+          <li>
+            <button>UI/UX</button>
+          </li>
+          <li>
+            <button>Development</button>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="projects">
-      <div>
+      <div class="image">
         <img src="./src/images/bless.png" alt="bless">
       </div>
       <div>
@@ -200,11 +248,17 @@
         <h4>Bless your yoga</h4>
         <p>Development of a corporate website with the possibility of logging into your personal account and online
           recording</p>
-        <div>
-          <button>Strategy</button>
-          <button>Website</button>
-          <button>UI/UX</button>
-        </div>
+        <ul>
+          <li>
+            <button>Strategy</button>
+          </li>
+          <li>
+            <button>Website</button>
+          </li>
+          <li>
+            <button>UI/UX</button>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="process">
@@ -229,7 +283,6 @@
     </section>
     <section class="collide">
       <div>
-        <img src="./src/images/plane.png" alt="plane">
         <p>[ Let’s </p>
         <p>collide ]</p>
         <img src="./src/images/click.png" alt="click">
