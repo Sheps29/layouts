@@ -1,0 +1,52 @@
+.collide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 750px;
+    height: 120px;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      height: 250px;
+    }
+
+    span {
+      display: flex;
+      font-size: 90px;
+      font-style: normal;
+
+      @media screen and (max-width: 768px) {
+        font-size: 64px;
+      }
+
+      @media screen and (max-width: 480px) {
+        font-size: 42px;
+      }
+    }
+
+    a {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      color: black;
+      border-radius: 50%;
+      text-align: center;
+      transform: translateX(300%);
+
+      @media screen and (max-width: 768px) {
+        transform: translate(300%, 100%);
+      }
+
+      @media screen and (max-width: 630px) {
+        transform: translate(230%, 100%);
+      }
+
+      @media screen and (max-width: 480px) {
+        transform: translate(150%, 100%);
+      }
+    } 
+  }

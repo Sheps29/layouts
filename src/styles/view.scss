@@ -1,0 +1,16 @@
+.view {
+    display: flex;
+    justify-content: right;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0;
+    
+    @media screen and (max-width: 768px) {
+        justify-content: center;
+    }
+
+    h4 {
+    font-size: 32px; 
+    font-weight: 400;     
+    }
+  }

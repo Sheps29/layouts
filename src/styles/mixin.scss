@@ -1,0 +1,42 @@
+@mixin margin {
+  margin: 50px 0;
+}
+
+@mixin color {
+  color: white;
+}
+
+@mixin button {
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  margin: 4px 2px;
+}
+
+@mixin span {
+  font-style: italic;
+}
+
+@mixin section {
+  max-width: 1440px;
+}
+
+@mixin ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+@mixin parameter {
+  display: flex;
+  gap: 16px;
+  max-width: 375px;
+  text-align: left;
+}
+
+@mixin parameter-h4 {
+  font-size: 32px;
+  line-height: 38px;
+  margin: 0;
+}

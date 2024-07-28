@@ -1,0 +1,62 @@
+@import "variables";
+
+@import "mixin";
+
+@import "extend";
+
+@import "header";
+
+@import "description";
+
+@import "market";
+
+@import "unusual";
+
+@import "showreel";
+
+@import "services";
+
+@import "info";
+
+@import "view";
+
+@import "projects";
+
+@import "process";
+
+@import "collide";
+
+@import "design";
+
+@import "footer";
+
+body {
+  font-family: $font;
+  background-color: $bgColor;
+  @include color;
+  @extend %text;
+
+  ul {
+    @include ul;
+  }
+
+  button {
+    @include button;
+  }
+
+  span {
+    @include span;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  section {
+    @include margin;
+    @include section;
+  }
+}
