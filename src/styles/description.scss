@@ -1,0 +1,47 @@
+.description {
+  position: relative;
+
+  &__plates {
+    max-width: 1440px;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  &__creativity {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    font-size: 72px;
+    max-width: 690px;
+    line-height: 80px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 36px;
+      max-width: 300px;
+      line-height: 36px;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 24px;
+      max-width: 250px;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  &__realization {
+    position: absolute;
+    color: #E2E2E2; 
+    bottom: 80px;
+    right: 40px;
+
+    @media screen and (max-width: 480px) {
+      right: 0;
+      bottom: 0;
+      }
+  }
+}

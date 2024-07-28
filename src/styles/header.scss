@@ -1,0 +1,49 @@
+.header {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    &__subtract {
+      max-width: 94px;
+      max-height: 24px;
+      transform: translateY(30%);
+      margin-left: 40px;
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    &__burger {
+      display: none;
+      width: 46px;
+      height: 46px;
+
+      @media screen and (max-width: 768px) {
+        display: block;
+      }
+    }
+
+    &__menu {
+      max-width: 600px;
+      margin-right: 20px;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+
+      }
+
+      li {
+        display: inline;
+        padding-right: 20px;
+        color: #909090;
+      }
+
+      &--contacts {
+        padding-left: 120px;
+        color: white !important;
+      }
+    }
+  }

@@ -1,0 +1,28 @@
+.info {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;      
+    width: 100%; 
+    
+
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      padding: 0 10px;
+    }
+
+    h5 {
+      max-width: 380px;
+      min-width: 76px;
+      font-weight: 400;
+    }
+
+    &__overview {
+      max-width: 546px;
+    }
+
+    &__submission {
+      max-width: 326px;
+    }
+  }

@@ -1,0 +1,94 @@
+.showreel {
+    position: relative;
+
+    &__arcs {
+      max-width: 1334px;
+      max-height: 284px;
+
+      img {
+        object-fit: cover;
+        height: auto;
+        width: 100%;
+        border-radius: 30px;
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          height: auto;
+        }
+
+        @media screen and (max-width: 480px) {
+          width: 100%;
+          max-height: 560px;
+        }
+      }
+    }
+    
+    span {
+      position: absolute;
+      width: 100%;
+      max-width: 1300px;
+      text-align: center;
+      font-style: normal;
+      line-height: 243px;
+      font-size: 210px;
+      font-weight: 500;
+      color: #909090;
+      transform: translate(-105%, 90%);
+      overflow-wrap: break-word;
+      hyphenate-character: ' ';
+
+      @media screen and (max-width: 1220px) {
+        font-size: 150px;
+        line-height: 100px;
+        transform: translate(-105%, 200%);
+      }
+
+      @media screen and (max-width: 990px) {
+        font-size: 130px;
+        line-height: 100px;
+        transform: translate(-100%, 200%);
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 100px;
+        line-height: 100px;
+        overflow-wrap: break-word;
+        max-width: 350px;
+        transform: translate(-150%, 30%);
+        opacity: 0.7;
+      }
+
+      @media screen and (max-width: 590px) {
+        font-size: 80px;
+        line-height: 100px;
+        overflow-wrap: break-word;
+        max-width: 350px;
+        transform: translate(-130%, 13%);
+      }
+      
+      @media screen and (max-width: 480px) {
+        font-size: 70px;
+        line-height: 80px;
+        overflow-wrap: break-word;
+        max-width: 250px;
+        transform: translate(-130%, 2%);
+      }
+    }
+
+    &__play {
+      position: absolute;
+      transform: translate(-130%, 300%);
+
+      @media screen and (max-width: 990px) {
+        transform: translate(-110%, 250%);
+      }
+
+      @media screen and (max-width: 768px) {
+        transform: translate(-110%, 100%);
+      }
+
+      @media screen and (max-width: 480px) {
+        transform: translate(-110%, 70%);       
+      }
+    }
+  }

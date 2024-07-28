@@ -1,0 +1,66 @@
+.unusual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    
+    &__transparency {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative;
+      text-align: right;
+
+      @media screen and (max-width: 480px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &--parameter {
+        @include parameter;
+        align-items: center;
+
+        h4 {
+         @include parameter-h4;
+        }
+
+        p {
+          margin: 0;
+        }
+      
+        @media screen and (max-width: 480px) {
+          align-items: flex-start;
+          width: 90%;
+          flex-direction: column;
+        }
+      }
+
+      &--lenses {
+        display: block;
+        max-width: 1000px;
+        max-height: 800px;
+
+        img {
+          object-fit: cover;
+          height: auto;
+          width: 100%;
+        }
+      }
+     }
+
+    &__parameters {
+      @include parameter;
+
+        p {
+        margin: 0;
+        }
+
+        h4 {
+          @include parameter-h4;
+        }
+
+        @media screen and (max-width: 480px) {
+        width: 90%;
+        flex-direction: column;
+        }
+    } 
+}

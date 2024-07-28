@@ -1,0 +1,33 @@
+.market {
+      
+    &__header {
+      margin: 0 0 0 40px;
+      font-size: 16px;
+      font-weight: 400;
+
+      @media screen and (max-width: 480px) {
+        margin-left: 0;
+      }
+    }
+
+    p {
+      margin: 0 40px;
+      font-weight: 500;
+      font-size: 42px;
+      line-height: 50px;
+      text-indent: 40%;
+
+      @media screen and (max-width: 768px) {
+        font-size: 36px;
+        line-height: 28px;
+        text-indent: 20%;
+      }
+
+      @media screen and (max-width: 480px) {
+        margin: 0;
+        font-size: 24px;
+        line-height: 28px;
+        text-indent: 10%;
+      }
+    }
+  }

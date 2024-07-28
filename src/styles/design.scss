@@ -1,0 +1,36 @@
+.design {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+    span {        
+      overflow-wrap: break-word;
+      line-height: 150px;
+      font-size: 190px;
+      font-style: normal;
+      font-weight: bold;
+      background: repeating-linear-gradient(
+      0deg,
+      gray 0,
+      gray 1px,
+      white 1px,
+      white 2px
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      hyphenate-character: ' ';
+      text-align: center;
+
+      @media screen and (max-width: 768px) {
+        font-size: 120px;
+        line-height: 100px;
+      }
+
+      @media screen and (max-width: 480px) {
+        font-size: 80px;
+        line-height: 60px;
+      }
+    }
+  }
