@@ -1,0 +1,62 @@
+@mixin h4 {
+  font-size: 26px;
+	font-weight: 400;
+	line-height: 28px;
+}
+
+@mixin button-white {
+  width: 343px;
+	height: 52px;
+	padding: 17px 62px;
+	background-color: white;
+	border: 1px solid #499647;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 16px;
+	color: #282828;
+}
+
+@mixin button-green {
+	width: 343px;
+	height: 52px;
+	padding: 17px 62px;
+	background-color: #499647;
+	border: 1px solid white;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 16px;
+	color: white;
+}
+
+@mixin icon {
+	display: block;
+	width: 61px;
+	height: 61px;
+}
+
+@mixin img {
+	object-fit: cover;
+	width: 100%;
+	height: auto;
+}
+
+@mixin h6 {
+	font-size: 21px;
+	font-weight: 400;
+	line-height: 23px;
+}
+
+@mixin h5 {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 28px;
+}
+
+@mixin ul {
+	list-style-type: none;
+}
+
+@mixin a {
+	text-decoration: none;
+	color: #EAEEF1;
+}

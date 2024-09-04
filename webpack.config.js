@@ -52,7 +52,7 @@ module.exports = {
         }),
     ],
     devServer: {
-        static: path.join(__dirname, 'dist'),
+        static: path.resolve(__dirname, './src/images'),
         compress: true,
         port: 9000,
         historyApiFallback: true,
