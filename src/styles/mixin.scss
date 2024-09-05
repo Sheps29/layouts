@@ -5,7 +5,7 @@
 }
 
 @mixin button-white {
-  width: 343px;
+  	max-width: 343px;
 	height: 52px;
 	padding: 17px 62px;
 	background-color: white;
@@ -17,7 +17,7 @@
 }
 
 @mixin button-green {
-	width: 343px;
+	max-width: 343px;
 	height: 52px;
 	padding: 17px 62px;
 	background-color: #499647;
@@ -59,4 +59,14 @@
 @mixin a {
 	text-decoration: none;
 	color: #EAEEF1;
+}
+
+@mixin left-header {
+	display: flex;
+	width: 210px;
+	margin: 0;
+	color: #909090;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 26px;
 }

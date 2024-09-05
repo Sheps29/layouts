@@ -4,7 +4,7 @@ section {
 	padding-left: 60px;
 	padding-right: 60px;
 
-	@media screen and (max-width: 375px) {
+	@media screen and (max-width: 480px) {
 		padding-left: 16px;
 		padding-right: 16px;
 	}
@@ -231,13 +231,7 @@ section {
 	}
 
 	&__header {
-		display: flex;
-		width: 210px;
-		margin: 0;
-		color: #909090;
-		font-size: 18px;
-		font-weight: 400;
-		line-height: 21px;
+		@include left-header;
 	}
 
 	&__block {
@@ -290,6 +284,10 @@ section {
 
 		&--collab {
 			@include button-white;
+
+			@media screen and (max-width: 370px) {
+				padding: 17px 30px;
+			}
 		}
 	}
 }
@@ -317,7 +315,7 @@ section {
 
 		&--promo {
 			border-top: 1px solid #EAEEF1;
-
+			max-width: 424px;
 
 			picture {
 				@include icon;
@@ -447,5 +445,68 @@ section {
 				margin: 0 0 26px 0;
 			}
 		}
+	}
+}
+
+.grade {
+	display: flex;
+
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+	}
+
+	&__header {
+		@include left-header;
+		min-width: 343px;
+		max-width: 424px;
+	}
+
+	&__block {
+		max-width: 872px;
+		
+		&--characteristic {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 24px;
+		}
+
+		&--picture {
+			max-width: 872px;
+			max-height: 420px;
+			width: 100%;
+			display: block;
+			margin-top: 42px;
+
+			.lapServer {
+				@media screen and (max-width: 375px) {
+					display: none;
+				}
+		
+				@media screen and (min-width: 375px) {
+					@include img;
+				}
+			}
+
+			.phoneServer {
+				@media screen and (max-width: 375px) {
+					@include img;
+				}
+		
+				@media screen and (min-width: 375px) {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.supply {
+	display: flex;
+	background-color: #EAEEF1;
+
+	&__header {
+		@include left-header;
+		max-width: 424px;
+		min-width: 343px;
 	}
 }
