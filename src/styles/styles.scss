@@ -502,11 +502,47 @@ section {
 
 .supply {
 	display: flex;
+	padding-top: 46px;
+	padding-bottom: 35px;
 	background-color: #EAEEF1;
+	
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+	}
 
 	&__header {
 		@include left-header;
 		max-width: 424px;
 		min-width: 343px;
+	}
+
+	&__box {
+		display: flex;
+		flex-wrap: wrap;
+
+		.view__block--promo {
+			min-width: 343px;
+			border-top: 1px solid #DFDFDF;
+		}
+	}
+}
+
+.cooperation {
+	display: flex;
+	flex-direction: column;
+
+	&__header {
+		@include left-header;
+		max-width: 424px;
+		min-width: 343px;
+	}
+
+	&__box {
+		display: flex;
+		flex-wrap: wrap;
+
+		.view__block--promo {
+			min-width: 343px;
+		}
 	}
 }
