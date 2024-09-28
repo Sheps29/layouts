@@ -595,4 +595,113 @@ section {
   min-width: 343px;
 }
 
+.team__box {
+  display: flex;
+  gap: 25px;
+}
+.team__box .sorokin {
+  position: relative;
+}
+.team__box .sorokin picture {
+  display: block;
+  width: 424px;
+  height: 548px;
+}
+.team__box .sorokin picture img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+.team__box .sorokin__promo {
+  position: absolute;
+  bottom: 0;
+  width: 424px;
+  background-color: #EAEEF1;
+}
+.team__box .sorokin__promo h5 {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #282828;
+  margin: 0;
+  padding: 33px 17px 8px 17px;
+}
+.team__box .sorokin__promo h6 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #3D4548;
+  margin: 0;
+  padding-bottom: 13px;
+  padding-left: 17px;
+}
+.team__box .sorokin__promo a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #3D4548;
+  padding-left: 17px;
+  padding-top: 10px;
+}
+.team__box--right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.team__box--right .staffer {
+  display: flex;
+  width: 424px;
+  position: relative;
+}
+.team__box--right .staffer .quote {
+  position: absolute;
+  width: 111px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  top: 9px;
+  left: 10px;
+}
+.team__box--right .staffer picture {
+  display: block;
+  width: 181px;
+  height: 260px;
+}
+.team__box--right .staffer picture img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+.team__box--right .staffer__box {
+  width: 243px;
+  height: 260px;
+  background-color: #EAEEF1;
+}
+.team__box--right .staffer__box h5 {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #282828;
+  margin: 0;
+  padding: 33px 17px 8px 17px;
+}
+.team__box--right .staffer__box h6 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #3D4548;
+  margin: 0;
+  padding-bottom: 13px;
+  padding-left: 17px;
+}
+.team__box--right .staffer__box a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #3D4548;
+  display: block;
+  padding-left: 17px;
+  padding-top: 10px;
+}
+
 /*# sourceMappingURL=styles.css.map */
