@@ -62,11 +62,16 @@
 }
 
 @mixin left-header {
-	display: flex;
 	width: 210px;
 	margin: 0;
 	color: #909090;
 	font-size: 24px;
 	font-weight: 400;
 	line-height: 26px;
+}
+
+@mixin h3 {
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 44px;
 }

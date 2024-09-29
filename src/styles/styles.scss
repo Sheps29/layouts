@@ -3,6 +3,7 @@
 section {
 	padding-left: 60px;
 	padding-right: 60px;
+	max-width: 1320px;
 
 	@media screen and (max-width: 480px) {
 		padding-left: 16px;
@@ -549,7 +550,12 @@ section {
 
 .team__box {
 	display: flex;
-	gap: 25px;
+	gap: 20px;
+	
+
+	@media screen and (max-width: 988px) {
+		flex-wrap: wrap;
+	  }
 
 	.sorokin {
 		position: relative;
@@ -662,4 +668,56 @@ section {
 			}
 		}
 	}
+}
+
+.announcement {
+	display: flex;
+
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+	}
+
+	&__header {
+		display: block;
+		max-width: 440px;
+		min-width: 343px;
+		@include h3;
+		color: #3D4548;
+		margin: 0;
+
+		@media screen and (max-width: 768px) {
+			@include h4;
+		}
+	}
+
+	.history__block--tale {
+		max-width: 863px;
+		min-width: 343px;
+		padding-top: 16px;
+
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+	}
+
+	.progress {
+		display: none;
+
+		@media screen and (max-width: 768px) {
+			display: block;
+			margin: 20px 0 56px 0;
+			padding-top: 16px;
+			color: #3D4548;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 21px;
+			border-top: 1px solid #EAEEF1;
+		}
+
+		@media screen and (max-width: 375px) {
+			margin: 20px 0 26px 0;
+		}
+	}
+
+	
 }
