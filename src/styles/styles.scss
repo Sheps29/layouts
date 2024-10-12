@@ -5,6 +5,11 @@ section {
 	padding-right: 60px;
 	max-width: 1320px;
 
+	@media screen and (max-width: 678px) {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+
 	@media screen and (max-width: 480px) {
 		padding-left: 16px;
 		padding-right: 16px;
@@ -14,8 +19,17 @@ section {
 .box-promo {
 	@include box-with-left-header;
 
+	@media screen and (max-width: 678px) {
+		flex-direction: column;
+	}
+
 	.left-header {
 		@include left-header;
+
+		@media screen and (max-width: 678px) {
+			font-size: 18px;
+			line-height: 21px;
+		}
 	}
 
 	.right-promo-box {
@@ -23,6 +37,11 @@ section {
 
 		.big-p {
 			@include big-p;
+
+			@media screen and (max-width: 678px) {
+				font-size: 26px;
+				line-height: 28px;
+			}
 		}
 
 		.p-top-border {
@@ -36,6 +55,10 @@ section {
 		.button-box {
 			display: flex;
 			gap: 24px;
+
+			@media screen and (max-width: 678px) {
+				flex-direction: column;
+			}
 
 			.green-button {
 				@include button-green;
@@ -813,17 +836,33 @@ section {
 .comment{
 
 	&__header{
-		width: 423px;
+		max-width: 423px;
 		font-size: 32px;
 		font-weight: 400;
 		line-height: 35px;
+
+		@media screen and (max-width: 678px) {
+			font-size: 26px;
+			line-height: 28px;
+		}
 	}
 
 	&__box {
 		display: grid;
+		grid-template-columns: auto auto auto;
+		gap: 40px 24px;
+		padding: 0;
+		max-width: 1322px;
+
+		@media screen and (max-width: 1440px) {
+			grid-template-columns: auto;
+		}
 
 		.subject {
 			list-style-type: none;
+			border-top: 1px solid#EAEEF1;
+			max-width: 424px;
+			min-width: 343px;
 
 			.number {
 				background-color: #499647;
@@ -843,6 +882,205 @@ section {
 				list-style-type: disc;
 				@include p;
 			}
+		}
+
+		.subject1 {
+			grid-column: span 2;
+			max-width: 872px;
+			min-width: 872px;
+			
+			@media screen and (max-width: 1000px) {
+				max-width: 424px;
+				min-width: 343px;
+				grid-column: span 1;
+			}
+
+		}
+
+		.subject3 {
+			grid-column: span 2;
+			max-width: 872px;
+			min-width: 872px;
+
+			@media screen and (max-width: 1000px) {
+				max-width: 424px;
+				min-width: 343px;
+				grid-column: span 1;
+			}
+		}
+	}
+}
+
+.media {
+
+	&__header {
+		font-size: 32px;
+		font-weight: 400;
+		line-height: 35px;
+
+		@media screen and (max-width: 678px) {
+			font-size: 26px;
+			line-height: 28px;
+		}
+	}
+
+	&__box {
+		padding: 0;
+
+		.item-media {
+			list-style-type: none;
+
+			.item-header {
+				@include h6;
+				margin: 20px 0;
+			}
+
+			.item-list {
+				padding: 0;
+				display: flex;
+				flex-wrap: wrap;
+				gap: 20px 24px;
+
+				.point {
+					list-style-type: none;
+
+					picture {
+						display: block;
+						width: 424px;
+						height: 141px;
+
+						img {
+							@include img;
+						}
+					}
+				}
+
+				.point-cripto {
+					list-style-type: none;
+
+					picture {
+						display: block;
+						width: 311px;
+						height: 141px;
+
+						img {
+							@include img;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.box-promo {
+	@include box-with-left-header;
+
+	@media screen and (max-width: 678px) {
+		flex-direction: column;
+	}
+
+	.activity-header {
+		@include h3;
+		margin: 0;
+
+		@media screen and (max-width: 678px) {
+			@include h4;
+		}
+
+		.p-top-border {
+			@include p-top-border;
+		}
+	}
+}
+
+.activity {
+
+	&__list {
+		padding: 0;
+
+		.activity-item {
+			list-style-type: none;
+			display: flex;
+			flex-wrap: wrap;
+			max-height: 358px;
+
+			.logo {
+				background-color: #EAEEF1;
+				max-width: 472px;
+				min-width: 343px;
+				max-height: 358px;
+				min-height: 259px;
+				position: relative;
+
+				@media screen and (max-width: 1349px) {
+					max-width: 872px;
+					min-width: 872px;
+				}
+
+				@media screen and (max-width: 1000px) {
+					min-width: 343px;
+				}
+
+				picture {
+					display: block;
+					width: 250px;
+					height: 54px;
+					position: absolute;
+
+					img {
+						@include img;
+					}
+				}
+			}
+
+				.activity-point {
+
+					.point-list {
+						padding: 0;
+
+						li {
+							list-style-type: none;
+							display: flex;
+
+							.num {
+								border: 1px solid #EAEEF1;
+								color: #A0A7AC;
+								font-size: 16px;
+								font-weight: 700;
+								line-height: 16px;
+								display: flex;
+								align-items: center;
+								
+								span {
+									padding: 15px 22px;
+									
+									
+								}
+							}
+
+							.name-activity {
+							border: 1px solid #EAEEF1;
+							color: #282828;
+							font-size: 21px;
+							font-weight: 400;
+							line-height: 25px;
+							padding: 12px 0 10px 24px;
+							min-width: 784px;
+
+							@media screen and (max-width: 1000px) {
+								max-width: 784px;
+								min-width: 400px;
+							}
+							
+							p {
+								margin: 0;
+							}
+							}
+						}
+					}
+				}
+			
 		}
 	}
 }
