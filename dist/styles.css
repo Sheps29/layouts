@@ -1066,12 +1066,13 @@ section {
     line-height: 28px;
   }
 }
-.box-promo .activity-header .p-top-border {
+.box-promo .activity-header .about {
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
   color: #3D4548;
   border-top: 1px solid #EAEEF1;
+  max-width: 872px;
 }
 
 .activity__list {
@@ -1081,15 +1082,17 @@ section {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  max-height: 358px;
+  margin: 12px 0;
+  align-items: stretch;
+  flex-grow: 1;
 }
 .activity__list .activity-item .logo {
   background-color: #EAEEF1;
   max-width: 472px;
   min-width: 343px;
-  max-height: 358px;
-  min-height: 259px;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 1349px) {
   .activity__list .activity-item .logo {
@@ -1106,12 +1109,14 @@ section {
   display: block;
   width: 250px;
   height: 54px;
-  position: absolute;
 }
 .activity__list .activity-item .logo picture img {
   object-fit: cover;
   width: 100%;
   height: auto;
+}
+.activity__list .activity-item .activity-point {
+  display: flex;
 }
 .activity__list .activity-item .activity-point .point-list {
   padding: 0;
@@ -1149,6 +1154,41 @@ section {
 }
 .activity__list .activity-item .activity-point .point-list li .name-activity p {
   margin: 0;
+}
+.activity__list .activity-item .activity-point .number {
+  border: 1px solid #EAEEF1;
+  color: #A0A7AC;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  display: flex;
+}
+.activity__list .activity-item .activity-point .number span {
+  padding: 15px 22px;
+}
+.activity__list .activity-item .activity-point .name-activity {
+  display: flex;
+  flex-direction: column;
+}
+.activity__list .activity-item .activity-point .name-activity h6 {
+  display: block;
+  border: 1px solid #EAEEF1;
+  color: #282828;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 0;
+  padding: 12px 0 10px 24px;
+}
+.activity__list .activity-item .activity-point .name-activity ul {
+  list-style-type: disc;
+  border: 1px solid #EAEEF1;
+}
+.activity__list .activity-item .activity-point .name-activity ul li {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #3D4548;
 }
 
 /*# sourceMappingURL=styles.css.map */
