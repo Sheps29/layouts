@@ -63,7 +63,7 @@
 }
 
 @mixin left-header {
-	width: 210px;
+	min-width: 210px;
 	margin: 0;
 	color: #909090;
 	font-size: 24px;

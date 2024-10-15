@@ -1047,7 +1047,7 @@ section {
 							display: flex;
 
 							.num {
-								border: 1px solid #EAEEF1;
+								border: 1px solid red;
 								color: #A0A7AC;
 								font-size: 16px;
 								font-weight: 700;
@@ -1061,13 +1061,13 @@ section {
 							}
 
 							.name-activity {
-							border: 1px solid #EAEEF1;
-							color: #282828;
-							font-size: 21px;
-							font-weight: 400;
-							line-height: 25px;
-							padding: 12px 0 10px 24px;
-							min-width: 784px;
+								border: 1px solid red;
+								color: #282828;
+								font-size: 21px;
+								font-weight: 400;
+								line-height: 25px;
+								padding: 12px 0 10px 24px;
+								min-width: 784px;
 
 							@media screen and (max-width: 1000px) {
 								max-width: 784px;
@@ -1101,7 +1101,7 @@ section {
 
 						h6 {
 							display: block;
-							border: 1px solid #EAEEF1;
+							border: 1px solid red;
 							color: #282828;
 							font-size: 21px;
 							font-weight: 400;
@@ -1113,7 +1113,7 @@ section {
 						
 						ul {
 							list-style-type: disc;
-							border: 1px solid #EAEEF1;
+							border: 1px solid red;
 
 							li {
 								font-size: 18px;
@@ -1128,3 +1128,47 @@ section {
 		}
 	}
 }
+
+.direction {
+
+	&__header {
+		@include left-header;
+		margin: 50px 0;
+	}
+
+	&__box {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 40px 24px;
+		padding: 0;
+
+		.direction-item {
+			flex-grow: 1;
+			max-width: 424px;
+			min-width: 343px;
+			border-top: 1px solid #EAEEF1;
+			list-style-type: none;
+
+			picture {
+				@include icon;
+				margin-top: 20px;
+
+				img {
+					@include img;
+				}
+			}
+
+			h6 {
+				@include h6;
+				color: #282828;
+				margin: 10px 0;
+			}
+
+			p {
+				@include p;
+				margin: 0;
+			}
+		}
+	}
+}
+
